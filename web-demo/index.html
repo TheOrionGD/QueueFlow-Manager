@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QueueFlow Manager - System Analysis</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <div class="glass-container">
+        <header>
+            <div class="logo">
+                <img src="logo.png" alt="Logo" class="logo-img">
+                🎟️ QueueFlow<span class="highlight">OS</span>
+            </div>
+            <nav>
+                <a href="#features">Features</a>
+                <a href="#architecture">Architecture</a>
+                <a href="#demo">Demo</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="badge">System Analysis Dashboard</div>
+                <h1 class="glitch" data-text="Next-Gen Seat Allocation">FIFO-Based Seat Allocation</h1>
+                <p class="subtitle">An advanced priority-based waiting list and dynamic seat management system.</p>
+                <div class="disclaimer-box">
+                    <span class="icon">ℹ️</span>
+                    <p><strong>Note:</strong> This webpage is only to understand what this system does from an analysis
+                        of the entire codebase. It serves as a visual representation of the underlying C application.
+                    </p>
+                </div>
+
+                <div class="context-grid">
+                    <div class="context-card">
+                        <div class="context-icon">🎯</div>
+                        <h3>Problem Statement</h3>
+                        <p>Traditional seat booking systems often lack dynamic scaling and struggle with priority-based waitlist management without relying on heavy, resource-intensive frameworks.</p>
+                    </div>
+                    <div class="context-card">
+                        <div class="context-icon">💡</div>
+                        <h3>Reason to Develop</h3>
+                        <p>I recognized the need for a highly efficient, lightweight seat management system that runs on minimal hardware while supporting advanced features like VIP priority queuing for my semester project.</p>
+                    </div>
+                    <div class="context-card">
+                        <div class="context-icon">⚠️</div>
+                        <h3>Development Challenges</h3>
+                        <p>Implementing a priority queue that maintains FIFO order for standard users while accurately placing VIP users ahead was a significant algorithm challenge, alongside ensuring zero memory leaks during dynamic seat scaling.</p>
+                    </div>
+                    <div class="context-card">
+                        <div class="context-icon">✅</div>
+                        <h3>Provided Solution</h3>
+                        <p>A C-based, memory-safe system utilizing singly linked lists for the seating map and a priority-based linked list for the waiting queue, ensuring rapid allocation and robust file I/O operations.</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="features" class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">👑</div>
+                    <h3>Priority Waitlist</h3>
+                    <p>VIP passengers are seamlessly prioritized in the queue, ensuring premium users receive immediate
+                        allocation when seats free up.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Dynamic Scaling</h3>
+                    <p>Add or remove seats at runtime without restarting. The system dynamically scales to accommodate
+                        varying vehicle or venue capacities.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3>Persistent State</h3>
+                    <p>Robust file I/O operations ensure that all bookings and waitlists are saved securely to disk,
+                        preventing data loss between sessions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Intelligent Reporting</h3>
+                    <p>Search algorithms to quickly locate passengers and generate real-time occupancy metrics and CSV
+                        exports for external analysis.</p>
+                </div>
+            </section>
+
+            <section id="architecture" class="terminal-section">
+                <div class="terminal-header">
+                    <div class="dot red"></div>
+                    <div class="dot yellow"></div>
+                    <div class="dot green"></div>
+                    <div class="title">QueueFlow Execution Trace</div>
+                </div>
+                <div class="terminal-body" id="terminal-body">
+                    <div class="line"><span class="prompt">$</span> ./waiting_list</div>
+                    <div class="line output">Initializing QueueFlow Manager...</div>
+                    <div class="line output">Loading previous data from bookings.dat...</div>
+                    <div class="line output">Waitlist data restored successfully.</div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
