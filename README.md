@@ -1,6 +1,13 @@
 # 🎟️ QueueFlowOS
 
-![QueueFlow Banner](https://via.placeholder.com/1200x300.png?text=QueueFlowOS+-+Next+Gen+Seat+Allocation)
+```text
+  ____                             _____ _                 ___  ____  
+ / __ \                           |  ___| |               / _ \/ ___| 
+| |  | |_   _  ___ _   _  ___     | |_  | | _____      __| | | \___ \ 
+| |  | | | | |/ _ \ | | |/ _ \    |  _| | |/ _ \ \ /\ / /| | | |___) |
+| |__| | |_| |  __/ |_| |  __/    | |   | | (_) \ V  V / | |_| |____/ 
+ \___\_\\__,_|\___|\__,_|\___|    |_|   |_|\___/ \_/\_/   \___/|____| 
+```
 
 **QueueFlowOS**: An advanced, memory-safe, priority-based waiting list and dynamic seat management system built in C.
 
