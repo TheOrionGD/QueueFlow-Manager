@@ -15,16 +15,20 @@
 
 ## 📌 Project Overview
 **Project Name**: QueueFlow-Manager (QueueFlowOS)
+
 **Project Type**: ACADEMIC PROJECT / SYSTEM APPLICATION
+
 **Industry Domain**: Transportation, Event Management, Hospitality
+
 **Target Audience**: Systems Engineers, Event Organizers, Transport Operators, Computer Science Students
+
 **Primary Purpose**: To provide a robust, memory-efficient, console-based simulation of real-time seat booking, priority waiting lists, and reporting.
 
 ---
 
 ## ⚙️ Technology Stack
-* **Frontend/Simulation**: HTML5, CSS3, Vanilla JavaScript (Provides an interactive web simulation of the C program for GitHub Pages deployment)
-* **Backend**: C Programming Language (CLI, C99/C11 standards)
+* **Simulation**: HTML5, CSS3, Vanilla JavaScript (Provides an interactive web simulation of the C program for GitHub Pages deployment)
+* **System**: C Programming Language (CLI, C99/C11 standards)
 * **Database**: Flat-file Datastores (`bookings.dat`, `waitlist.dat`, `export.csv`)
 * **Infrastructure**: Cross-platform Makefiles, GCC/Clang Compatible
 
